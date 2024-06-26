@@ -6,25 +6,29 @@
 
 h1{
     font-size: 100px;
+    margin-top: 50px;
 }
 table{
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100%;
     border-collapse: collapse;
     border: 3px solid rgb(0, 0, 0);
 }
 th{
-    background-color: rgb(129, 68, 77);
+    background-color: rgb(43, 125, 208);
+    font-size: large;
     color: white;
     text-align: center;
+    border: 3px solid black;
 }
 td{
     padding: 5px;
+    font-size: larger;
     text-align: center;
-    border: 3px solid rgb(76, 0, 255);
+    border: 3px solid rgb(0, 0, 0);
 }
 tr:nth-child(odd){
-    background-color: rgb(255, 123, 0);
+    background-color: rgb(225, 181, 140);
 }
 tr:nth-child(even){
     background-color: rgb(255, 255, 161);

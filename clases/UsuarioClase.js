@@ -1,7 +1,7 @@
 class Usuario{
     constructor(usuario1){
         
-        this.id=usuario1.idusuario;
+        this.id=usuario1.idusuarios;
         this.nombre=usuario1.nombre;
         this.celular=usuario1.celular;
         this.correo=usuario1.correo;
