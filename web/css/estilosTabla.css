@@ -13,6 +13,7 @@ table{
     width: 100%;
     border-collapse: collapse;
     border: 3px solid rgb(0, 0, 0);
+    margin: 50px;
 }
 th{
     background-color: rgb(43, 125, 208);

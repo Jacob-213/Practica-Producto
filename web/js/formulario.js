@@ -26,7 +26,7 @@ nombre.addEventListener("blur", ()=>{
         enviarDatos++;
         mensajeNombre.classList.remove("ocultar");
         nombre.classList.add("error");
-        nombre.classList.add("correcto");
+        nombre.classList.remove("correcto");
         circleCrossNombre.classList.remove("ocultar");
         circleCheckNombre.classList.add("ocultar");
     }
@@ -34,9 +34,9 @@ nombre.addEventListener("blur", ()=>{
 
         mensajeNombre.classList.add("ocultar");
         nombre.classList.add("correcto");
+        nombre.classList.remove("error");
         circleCrossNombre.classList.add("ocultar");
         circleCheckNombre.classList.remove("ocultar");
-        nombre.classList.remove("error");
         
     }
 });
@@ -47,7 +47,7 @@ celular.addEventListener("blur", ()=>{
         enviarDatos++;
         mensajeCelular.classList.remove("ocultar");
         celular.classList.add("error");
-        celular.classList.add("correcto");
+        celular.classList.remove("correcto");
         circleCrossCelular.classList.remove("ocultar");
         circleCheckCelular.classList.add("ocultar");
     }
@@ -68,7 +68,7 @@ correo.addEventListener("blur", ()=>{
         enviarDatos++;
         mensajeCorreo.classList.remove("ocultar");
         correo.classList.add("error");
-        correo.classList.add("correcto");
+        correo.classList.remove("correcto");
         circleCrossCorreo.classList.remove("ocultar");
         circleCheckCorreo.classList.add("ocultar");
     }
