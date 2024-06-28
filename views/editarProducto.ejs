@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar producto</title>
+    <link rel="stylesheet" href="http://127.0.0.1:3000/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/formulario.js" defer></script>
+</head>
+
+<body>
+    <h1>Editar Producto</h1>
+    <div class="contenedor">
+        <form action="/editarProducto" method="post" id="formulario">
+            <input value="<%= idproducto %>" name="idproducto" id="idproducto" type="hidden">
+            <label for="nombre">Nombre:</label>
+            <input value="<%= nombre %>" name="nombre" id="nombre" type="text" placeholder="Nombre">
+            <label for="precio">Precio:</label>
+            <input value="<%= precio %>" name="precio" id="precio" type="text" placeholder="Precio">
+            <label for="descripcion">Descripción:</label>
+            <textarea name="descripcion" id="descripcion" placeholder="Descripción"><%= descripcion %></textarea>
+            <button type="submit">Guardar datos</button>
+        </form>
+    </div>
+</body>
+
+</html>

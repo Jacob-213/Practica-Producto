@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/formularioProducto.js" defer></script>
+</head>
+
+<body>
+    <h1>Registro de Producto</h1>
+    <div class="contenedor">
+        <form action="/agregarProducto" method="post" id="formularioP">
+            <label for="nombre">Nombre:</label><span class="ocultar mensajeNombreP">Nombre no válido</span>
+            <input autofocus name="nombre" id="nombre" type="text" placeholder="Nombre">
+
+            <label for="precio">Precio:</label><span class="ocultar mensajePrecioP">Precio no válido</span>
+            <input name="precio" id="precio" type="text" placeholder="Precio">
+
+            <label for="descripcion">Descripción:</label><span class="ocultar mensajeDescripcion">Descripción no válida</span>
+            <input name="descripcion" id="descripcion" type="text" placeholder="Descripción">
+            
+            <label for="categoria">Categoría:</label><span class="ocultar mensajeCategoría">Categoría no válida</span>
+            <input name="categoria" id="categoria" type="text" placeholder="Categoria">
+
+            <button type="submit">Guardar datos</button>
+        </form>
+    </div>
+</body>
+
+</html>

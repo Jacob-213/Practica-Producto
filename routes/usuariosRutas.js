@@ -40,9 +40,9 @@ ruta.get("/agregarUsuario",(req,res)=>{
 ruta.get("/editarUsuario/:idUsuario",async(req,res)=>{
     try {
         const usuariobd=new UsuarioBD();
-        const usuaio=await usuariobd.usuarioId(req.params.idUsuario);
-        console.log(usuaio);
-        res.render("editarUsuario", usuaio);
+        const usuario=await usuariobd.usuarioId(req.params.idUsuario);
+        console.log(usuario);
+        res.render("editarUsuario", usuario);
 
     } catch (error) {
         
